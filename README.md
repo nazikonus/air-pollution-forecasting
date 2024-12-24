@@ -95,23 +95,6 @@ The performance of both models was evaluated using multiple metrics:
 
 ---
 
-## Visualizations
-### 1. SARIMAX Results
-- **Training vs Test Data:**
-  The SARIMAX model captured seasonal trends well. Below is an example graph for PM2.5:
-
-![Training and Test Data](images/sarimax_train_test.png)
-
-- **Forecast for 2025:**
-  ![Predicted Data](images/sarimax_forecast_2025.png)
-
-### 2. CNN-LSTM Results
-- **Actual vs Predicted (Test Set):**
-  CNN-LSTM produced smoother predictions with lower error margins:
-
-![Actual vs Predicted](images/cnn_lstm_actual_vs_predicted.png)
-
----
 
 ## Conclusion
 1. Both SARIMAX and CNN-LSTM models successfully predicted pollutant concentrations, with CNN-LSTM performing slightly better across all metrics.
@@ -127,25 +110,6 @@ The performance of both models was evaluated using multiple metrics:
 ### Prerequisites
 - Python 3.8+
 - Required libraries: TensorFlow, NumPy, Pandas, Matplotlib, scikit-learn, statsmodels
-
-### Steps
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/air-pollution-forecasting.git
-   ```
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Run the SARIMAX script:
-   ```bash
-   python sarimax_forecasting.py
-   ```
-4. Run the CNN-LSTM script:
-   ```bash
-   python cnn_lstm_forecasting.py
-   ```
-
 ---
 
 ## License
