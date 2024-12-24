@@ -43,8 +43,7 @@ The dataset was obtained from a publicly available air quality monitoring source
 
 - **Custom Functionality**:
   - The `extend_exog` function ensures that exogenous variables are extended properly to match the forecast length.
-  - Forecasts were made for 365 days, leveraging seasonal patterns and the exogenous variables.
-  - 
+  - Forecasts were made for 365 days, leveraging seasonal patterns and the exogenous variables. 
 
 ### 2. **CNN-LSTM Model**
 Why CNN-LSTM? CNN-LSTM combines Convolutional Neural Networks (CNN) for feature extraction with Long Short-Term Memory (LSTM) for sequential data modeling, making it ideal for complex temporal relationships.
