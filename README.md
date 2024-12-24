@@ -37,25 +37,43 @@ The dataset was obtained from a publicly available air quality monitoring source
   SARIMAX (Seasonal AutoRegressive Integrated Moving Average with eXogenous regressors) was chosen for its ability to model seasonal trends and incorporate external variables like temperature, humidity, and wind speed.
 
 - **Configuration**:
-  - Order: (1, 1, 1)
-  - Seasonal Order: (1, 1, 0, 12)
+  - `order=(1, 1, 1)`: A basic ARIMA structure with 1 lag, first-order differencing, and 1 moving average term.
+  - `seasonal_order=(1, 1, 0, 12)`: Captures yearly seasonality.
+  - Exogenous variables: Temperature, Humidity, and Wind Speed.
 
-- **Exogenous Variables**:
-  Temperature, Humidity, and Wind Speed were included to improve prediction accuracy.
+- **Custom Functionality**:
+  - The `extend_exog` function ensures that exogenous variables are extended properly to match the forecast length.
+  - Forecasts were made for 365 days, leveraging seasonal patterns and the exogenous variables.
+  - 
 
 ### 2. **CNN-LSTM Model**
-- **Why CNN-LSTM?**
-  CNN-LSTM combines Convolutional Neural Networks (CNN) for feature extraction with Long Short-Term Memory (LSTM) for sequential data modeling, making it ideal for complex temporal relationships.
+Why CNN-LSTM? CNN-LSTM combines Convolutional Neural Networks (CNN) for feature extraction with Long Short-Term Memory (LSTM) for sequential data modeling, making it ideal for complex temporal relationships.
 
-- **Architecture**:
-  - Conv1D layer with 128 filters and kernel size of 5.
-  - Dropout layer (0.3) for regularization.
-  - LSTM layer with 100 units.
-  - Dense layer with 1 output for regression.
+Architecture:
 
-- **Training Parameters**:
-  - Epochs: 30
-  - Batch Size: 16
+Conv1D layer with 256 filters and kernel size of 3.
+
+Dropout layer (0.3) for regularization.
+
+Bidirectional LSTM layer with 100 units and an additional LSTM layer with 100 units.
+
+Dense layer with 1 output for regression.
+
+Training Parameters:
+
+Epochs: 50
+
+Batch Size: 32
+
+Implementation Details:
+
+The model inputs sequences of 15 time steps for both pollutant levels and exogenous variables.
+
+Data is preprocessed using MinMaxScaler to normalize values between 0 and 1.
+
+The model was trained using the Adam optimizer and mean squared error loss function.
+
+Exogenous variables (e.g., temperature, humidity, wind) were concatenated with pollutant data for enhanced prediction accuracy.
 
 ---
 
