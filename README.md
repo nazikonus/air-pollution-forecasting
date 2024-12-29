@@ -79,12 +79,23 @@ Exogenous variables (e.g., temperature, humidity, wind) were concatenated with p
 ## Results
 The performance of both models was evaluated using multiple metrics:
 
-| Pollutant | Model     | MAE   | MSE    | RMSE  | R²    |
-|-----------|-----------|-------|--------|-------|--------|
-| PM2.5     | SARIMAX   | 3.45  | 12.56  | 3.54  | 0.87   |
-|           | CNN-LSTM  | 3.12  | 11.23  | 3.35  | 0.89   |
-| PM10      | SARIMAX   | 4.23  | 18.34  | 4.28  | 0.82   |
-|           | CNN-LSTM  | 3.98  | 16.45  | 4.05  | 0.84   |
+### SARIMAX Model
+| Pollutant | MAE   | MSE    | RMSE  | R²    |
+|-----------|-------|--------|-------|-------|
+| PM2.5     | 19.99 | 675.67 | 25.99 | 0.91  |
+| PM10      | 12.98 | 363.98 | 19.08 | 0.91  |
+
+### CNN Model
+| Pollutant | MAE   | MSE    | RMSE  | R²    |
+|-----------|-------|--------|-------|-------|
+| PM2.5     | 17.52 | 517.66 | 22.75 | 0.75  |
+| PM10      | 10.25 | 259.99 | 16.12 | 0.82  |
+
+### LSTM Model
+| Pollutant | MAE   | MSE    | RMSE  | R²    |
+|-----------|-------|--------|-------|-------|
+| PM2.5     | 15.78 | 442.50 | 21.04 | 0.86  |
+| PM10      | 12.11 | 291.25 | 17.07 | 0.73  |
 
 ---
 
