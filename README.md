@@ -101,8 +101,7 @@ The performance of both models was evaluated using multiple metrics:
 
 
 ## Conclusion
-1. Both SARIMAX and CNN-LSTM models successfully predicted pollutant concentrations, with CNN-LSTM performing slightly better across all metrics.
-2. Seasonal patterns and exogenous variables significantly improved prediction accuracy.
+Among the models evaluated, SARIMAX outperformed both CNN and LSTM models in predicting pollutant concentrations. While CNN-LSTM showed slightly better results in some areas, SARIMAX proved to be more effective overall due to its ability to account for seasonal patterns and incorporate exogenous variables. These factors significantly improved the prediction accuracy, making SARIMAX the preferred choice for time-series forecasting in this context.
 
 ### Recommendations
 1. Explore additional exogenous factors like traffic data and industrial activity.
