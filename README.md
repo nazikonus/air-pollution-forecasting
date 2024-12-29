@@ -13,11 +13,45 @@ The dataset was obtained from a publicly available air quality monitoring source
 
 ### Features
 - **Pollutants**:
-  - PM2.5
-  - PM10
-  - NO2
-  - SO2
-  - CO
+## Pollutants Overview
+
+### PM2.5 (Particulate Matter < 2.5 microns)
+
+- **What it is**: Fine particles smaller than 2.5 microns that can penetrate deep into the lungs and bloodstream.
+- **Units**: µg/m³ (micrograms per cubic meter).
+- **Sources**: Industrial emissions, vehicle exhaust, wildfires, and construction dust.
+- **Impact**: Major component of smog, causing respiratory issues and reducing visibility.
+
+### PM10 (Particulate Matter < 10 microns)
+
+- **What it is**: Particles smaller than 10 microns that can irritate the respiratory system.
+- **Units**: µg/m³.
+- **Sources**: Transport, dust from construction sites, agriculture, and wildfires.
+- **Impact**: Contributes to smog and health problems, particularly in urban areas.
+
+### NO2 (Nitrogen Dioxide)
+
+- **What it is**: A gas produced by combustion processes, especially from vehicles and power plants.
+- **Units**: ppm (parts per million) or µg/m³.
+- **Sources**: Vehicles, industrial emissions, power plants.
+- **Impact**: Contributes to photochemical smog, aggravates asthma, and reduces air quality.
+
+### SO2 (Sulfur Dioxide)
+
+- **What it is**: A gas released from burning fossil fuels and volcanic activity.
+- **Units**: µg/m³ or ppm.
+- **Sources**: Power plants, industrial processes, volcanoes.
+- **Impact**: Forms acid rain, harms respiratory health, and contributes to smog.
+
+### CO (Carbon Monoxide)
+
+- **What it is**: A colorless, odorless gas produced by incomplete combustion of carbon-containing fuels.
+- **Units**: ppm.
+- **Sources**: Vehicle emissions, industrial processes, and household heating.
+- **Impact**: Reduces oxygen delivery in the body, contributing to smog and health risks.
+
+### Smog Impact:
+These pollutants, when combined, form smog that reduces air quality, visibility, and harms human health, especially in urban areas with high traffic and industrial activity.
 - **Exogenous Variables**:
   - Temperature
   - Humidity
