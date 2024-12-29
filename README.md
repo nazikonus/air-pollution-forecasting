@@ -3,7 +3,7 @@ Analysis and forecasting of air pollution in Almaty
 # Air Pollution Forecasting Project
 
 ## Overview
-This project focuses on forecasting air pollution levels, specifically PM2.5, PM10 concentrations. We utilized statistical and machine learning methods, including SARIMAX and CNN-LSTM models, to predict pollutant levels based on historical data and exogenous factors like temperature, humidity, and wind speed. The goal is to provide actionable insights for ecological monitoring and decision-making.
+This project focuses on forecasting air pollution levels, specifically PM2.5, PM10 concentrations. We utilized statistical and machine learning methods, including SARIMAX , CNN and LSTM models, to predict pollutant levels based on historical data and exogenous factors like temperature, humidity, and wind speed. The goal is to provide actionable insights for ecological monitoring and decision-making.
 
 ---
 
