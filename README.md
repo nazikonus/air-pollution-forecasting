@@ -85,12 +85,6 @@ The performance of both models was evaluated using multiple metrics:
 |           | CNN-LSTM  | 3.12  | 11.23  | 3.35  | 0.89   |
 | PM10      | SARIMAX   | 4.23  | 18.34  | 4.28  | 0.82   |
 |           | CNN-LSTM  | 3.98  | 16.45  | 4.05  | 0.84   |
-| NO2       | SARIMAX   | 2.89  | 8.25   | 2.87  | 0.91   |
-|           | CNN-LSTM  | 2.73  | 7.64   | 2.76  | 0.92   |
-| SO2       | SARIMAX   | 1.56  | 3.12   | 1.77  | 0.95   |
-|           | CNN-LSTM  | 1.42  | 2.85   | 1.69  | 0.96   |
-| CO        | SARIMAX   | 0.78  | 1.25   | 1.12  | 0.89   |
-|           | CNN-LSTM  | 0.68  | 1.10   | 1.05  | 0.91   |
 
 ---
 
@@ -107,12 +101,10 @@ The performance of both models was evaluated using multiple metrics:
 
 ## How to Run
 ### Prerequisites
-- Python 3.8+
+- Python 3.8+ 
 - Required libraries: TensorFlow, NumPy, Pandas, Matplotlib, scikit-learn, statsmodels
 ---
-
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+ 
 
 ## Acknowledgments
 Special thanks to the data providers and open-source contributors for making this project possible.
